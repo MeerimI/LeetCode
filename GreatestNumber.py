@@ -1,7 +1,7 @@
 class Solution(object):
     def kidsWithCandies(self, candies, extraCandies):
              
-        candy = []
+        result = []
         for i in range(len(candies)):
             b = 0
             res = candies[i] + extraCandies  
@@ -9,7 +9,7 @@ class Solution(object):
                 if res >= j:                   
                     b += 1                     
             if b == len(candies):
-                candy.append(True)
+                result.append(True)
             else:
-                candy.append(False)    
-        return candy
+                result.append(False)    
+        return result
