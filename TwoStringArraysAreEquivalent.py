@@ -45,3 +45,25 @@ class Solution(object):
 
         else:
             return False
+
+
+"""
+case c:
+Runtime: 24 ms, faster than 50.51% of Python online submissions for Check If Two String Arrays are Equivalent.
+Memory Usage: 13.5 MB, less than 53.85% of Python online submissions for Check If Two String Arrays are Equivalent.
+
+"""
+
+class Solution(object):
+    def arrayStringsAreEqual(self, word1, word2):
+             
+        first = ""
+        second = ""
+        for i in word1:
+                first += i
+                
+        for j in word2:
+            second += j
+
+        return first == second
+            
