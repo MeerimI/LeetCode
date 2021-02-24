@@ -73,3 +73,24 @@ class Solution(object):
                 freq[i] -= 1
         return result
 
+
+
+
+
+
+"""
+case d:
+
+Runtime: 52 ms, faster than 81.84% of Python online submissions for Decompress Run-Length Encoded List.
+Memory Usage: 13.8 MB, less than 51.90% of Python online submissions for Decompress Run-Length Encoded List.
+
+"""
+
+
+class Solution(object):
+    def decompressRLElist(self, nums):
+               
+        result = []       
+        for i in range(0, len(nums)-1, 2):
+            result +=  nums[i] * [nums[i+1]]
+        return result
