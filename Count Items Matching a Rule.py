@@ -4,7 +4,6 @@ Memory Usage: 20.9 MB, less than 100.00% of Python online submissions for Count 
 
 """
 
-
 class Solution(object):
     def countMatches(self, items, ruleKey, ruleValue):
         
