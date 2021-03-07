@@ -30,6 +30,6 @@ class Solution(object):
         for i in range(len(words)):
             for j in range(len(words)):
                 if words[i] in words[j] and i!=j:
-                    ans.append(words[i])
+                    result.append(words[i])
                     break
         return result
