@@ -4,7 +4,6 @@ Memory Usage: 52.4 MB, less than 100.00% of Python online submissions for Find C
 
 """
 
-
 class Solution(object):
     def findCenter(self, edges):
         count = 1
