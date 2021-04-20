@@ -56,7 +56,6 @@ class Solution3(object):
         r = len(nums) - 1
         while l <= r:
             mid = (l + r) // 2
-                        
             if nums[mid] == target:
                 return mid
             elif nums[mid] >= target:
