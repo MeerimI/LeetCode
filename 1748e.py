@@ -3,7 +3,7 @@ Runtime: 20 ms, faster than 70.11% of Python online submissions for Sum of Uniqu
 Memory Usage: 13.2 MB, less than 99.03% of Python online submissions for Sum of Unique Elements.
 '''
 
-class Solution(object):
+class Solution(object):     # Сложность этого решения - O(n)
     def sumOfUnique(self, nums):
     
         sum = 0
@@ -17,5 +17,20 @@ class Solution(object):
             if qtyOfDigits[j] == 1:
                 sum += j
         return sum
-        
-# Сложность этого решения - O(n)
+
+
+
+
+'''
+Runtime: 20 ms, faster than 70.11% of Python online submissions for Sum of Unique Elements.
+Memory Usage: 13.3 MB, less than 66.56% of Python online submissions for Sum of Unique Elements.
+
+'''
+
+class Solution:         # Сложность этого решения - O(n)
+    def sumOfUnique(self, nums):
+        sum1 = 0
+        for i in nums:
+            if nums.count(i) == 1:
+                sum1 = sum1 + i
+        return sum1
