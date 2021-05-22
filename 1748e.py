@@ -17,4 +17,5 @@ class Solution(object):
                 sum += j
         return sum
 
+
 # Сложность этого решения - O(n)
