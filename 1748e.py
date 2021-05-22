@@ -17,6 +17,5 @@ class Solution(object):
             if qtyOfDigits[j] == 1:
                 sum += j
         return sum
-
-
+        
 # Сложность этого решения - O(n)
